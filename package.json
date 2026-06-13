@@ -1,15 +1,19 @@
 {
   "name": "@jqvelin/eslint-config",
-  "version": "1.0.1",
+  "version": "1.1.0",
   "author": "jqvelin",
   "repository": {
     "type": "git",
     "url": "git+https://github.com/jqvelin/eslint-config.git"
   },
   "exports": {
+    "./typescript": {
+      "import": "./src/typescript.js",
+      "types": "./src/config.d.ts"
+    },
     "./react-typescript": {
       "import": "./src/react-typescript.js",
-      "types": "./src/react-typescript.d.ts"
+      "types": "./src/config.d.ts"
     }
   },
   "files": [
@@ -34,7 +38,7 @@
   "bugs": {
     "url": "https://github.com/jqvelin/eslint-config/issues"
   },
-  "description": "A eslint config for React applications written in TypeScript",
+  "description": "ESLint configs for plain TypeScript and React TypeScript projects",
   "homepage": "https://github.com/jqvelin/eslint-config#readme",
   "keywords": [
     "eslint",
