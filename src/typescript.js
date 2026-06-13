@@ -108,6 +108,7 @@ export default defineConfig([
       '@typescript-eslint/no-unsafe-call': 'error',
       '@typescript-eslint/no-unsafe-member-access': 'error',
       '@typescript-eslint/no-unsafe-return': 'error',
+      'max-lines': ['error', { max: 100, skipBlankLines: true, skipComments: true }],
       'arrow-body-style': ['error', 'as-needed'],
       curly: ['error', 'all'],
       eqeqeq: ['error', 'always', {

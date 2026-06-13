@@ -42,6 +42,7 @@ export default defineConfig([
       }
     },
     rules: {
+      'max-lines': ['error', { max: 150, skipBlankLines: true, skipComments: true }],
       '@stylistic/jsx-closing-bracket-location': ['error', 'line-aligned'],
       '@stylistic/jsx-closing-tag-location': ['error', 'tag-aligned'],
       '@stylistic/jsx-indent-props': ['error', 2],
