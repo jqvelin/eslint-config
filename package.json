@@ -30,10 +30,10 @@
     "eslint": "^9.0.0"
   },
   "bugs": {
-    "url": "https://github.com/jqvelin/eslint_config/issues"
+    "url": "https://github.com/jqvelin/eslint-config/issues"
   },
   "description": "A eslint config for React applications written in TypeScript",
-  "homepage": "https://github.com/jqvelin/eslint_config#readme",
+  "homepage": "https://github.com/jqvelin/eslint-config#readme",
   "keywords": [
     "eslint",
     "config"
