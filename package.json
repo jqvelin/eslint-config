@@ -1,0 +1,43 @@
+{
+  "name": "@jqvelin/eslint-config",
+  "version": "1.0.0",
+  "author": "jqvelin",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/jqvelin/eslint-config.git"
+  },
+  "exports": {
+    "./react-typescript": {
+      "import": "./src/react-typescript.js",
+      "types": "./src/react-typescript.d.ts"
+    }
+  },
+  "files": ["src"],
+  "dependencies": {
+    "@eslint/js": "^9.0.0",
+    "@stylistic/eslint-plugin": "^5.10.0",
+    "eslint-import-resolver-typescript": "^4.4.5",
+    "eslint-plugin-import": "^2.32.0",
+    "eslint-plugin-jsx-a11y": "^6.10.2",
+    "eslint-plugin-newline-destructuring": "^1.2.2",
+    "eslint-plugin-react": "^7.37.5",
+    "eslint-plugin-react-hooks": "^7.1.1",
+    "eslint-plugin-react-refresh": "^0.5.2",
+    "globals": "^17.6.0",
+    "typescript-eslint": "^8.60.1"
+  },
+  "peerDependencies": {
+    "eslint": "^9.0.0"
+  },
+  "bugs": {
+    "url": "https://github.com/jqvelin/eslint_config/issues"
+  },
+  "description": "A eslint config for React applications written in TypeScript",
+  "homepage": "https://github.com/jqvelin/eslint_config#readme",
+  "keywords": [
+    "eslint",
+    "config"
+  ],
+  "license": "ISC",
+  "type": "esm"
+}
