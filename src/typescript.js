@@ -5,6 +5,7 @@ import globals from 'globals';
 import importPlugin from 'eslint-plugin-import';
 import tseslint from 'typescript-eslint';
 import newlineDestructuring from 'eslint-plugin-newline-destructuring';
+import { reactPathGroups, stylePathGroups } from '../utils/constants.ts';
 
 export default defineConfig([
   {
@@ -126,18 +127,15 @@ export default defineConfig([
           order: 'asc'
         },
         groups: [
-          'builtin',
-          'external',
-          'internal',
-          [
-            'parent',
-            'sibling',
-            'index'
-          ],
-          'object',
+          ['builtin', 'external', 'internal'],
+          ['parent', 'sibling', 'index'],
           'type'
         ],
-        'newlines-between': 'always'
+        pathGroups: [...reactPathGroups, ...stylePathGroups],
+        pathGroupsExcludedImportTypes: ['builtin', 'object'],
+        distinctGroup: true,
+        'newlines-between': 'always',
+        warnOnUnassignedImports: true
       }],
       'import/newline-after-import': ['error', { count: 1 }],
       'no-console': 'warn',
