@@ -1,6 +1,6 @@
 {
   "name": "@jqvelin/eslint-config",
-  "version": "1.4.0",
+  "version": "1.4.1",
   "author": "jqvelin",
   "repository": {
     "type": "git",
@@ -46,5 +46,5 @@
     "config"
   ],
   "license": "ISC",
-  "type": "esm"
+  "type": "module"
 }

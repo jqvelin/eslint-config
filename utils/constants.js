@@ -1,4 +1,4 @@
-const STYLE_EXTENSIONS = ['css', 'scss', 'sass', 'less'] as const;
+const STYLE_EXTENSIONS = ['css', 'scss', 'sass', 'less'];
 
 export const reactPathGroups = [
   {
@@ -21,7 +21,7 @@ export const reactPathGroups = [
     group: 'external',
     position: 'before'
   }
-] as const;
+];
 
 export const stylePathGroups = STYLE_EXTENSIONS.flatMap((ext) => [
   {
@@ -50,3 +50,5 @@ export const stylePathGroups = STYLE_EXTENSIONS.flatMap((ext) => [
     position: 'after'
   }
 ]);
+
+export const importPathGroups = [...reactPathGroups, ...stylePathGroups];
