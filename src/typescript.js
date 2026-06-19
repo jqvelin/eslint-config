@@ -103,14 +103,8 @@ export default defineConfig([
       '@typescript-eslint/no-explicit-any': ['error', {
         fixToUnknown: true
       }],
-      '@typescript-eslint/no-floating-promises': ['error', {
-        ignoreIIFE: true
-      }],
-      '@typescript-eslint/no-misused-promises': ['error', {
-        checksVoidReturn: {
-          attributes: false
-        }
-      }],
+      '@typescript-eslint/no-floating-promises': 'off',
+      '@typescript-eslint/no-misused-promises': 'off',
       '@typescript-eslint/no-unsafe-assignment': 'error',
       '@typescript-eslint/no-unsafe-call': 'error',
       '@typescript-eslint/no-unsafe-member-access': 'error',
