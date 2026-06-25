@@ -67,8 +67,21 @@ export default defineConfig([
       '@stylistic/eol-last': ['error', 'always'],
       '@stylistic/no-multiple-empty-lines': ['error', { max: 1, maxEOF: 0 }],
       '@stylistic/no-trailing-spaces': 'error',
+      '@stylistic/no-multi-spaces': 'error',
+      '@stylistic/keyword-spacing': ['error', { before: true, after: true }],
+      '@stylistic/space-infix-ops': 'error',
       '@stylistic/comma-dangle': ['error', 'never'],
-      '@stylistic/comma-spacing': ['error', { after: true }],
+      '@stylistic/comma-spacing': ['error', { before: false, after: true }],
+      '@stylistic/semi-spacing': ['error', { before: false, after: true }],
+      '@stylistic/space-before-blocks': 'error',
+      '@stylistic/block-spacing': ['error', 'always'],
+      '@stylistic/space-in-parens': ['error', 'never'],
+      '@stylistic/object-curly-spacing': ['error', 'always'],
+      '@stylistic/template-curly-spacing': ['error', 'never'],
+      '@stylistic/function-call-spacing': ['error', 'never'],
+      '@stylistic/space-unary-ops': ['error', { words: true, nonwords: false }],
+      '@stylistic/type-annotation-spacing': 'error',
+      '@stylistic/switch-colon-spacing': ['error', { after: true, before: false }],
       '@stylistic/object-property-newline': ['error', {
         allowAllPropertiesOnSameLine: false
       }],
@@ -97,6 +110,7 @@ export default defineConfig([
         next: 'return'
       }],
       '@stylistic/key-spacing': ['error', {
+        beforeColon: false,
         afterColon: true
       }],
       '@typescript-eslint/consistent-type-imports': 'error',
