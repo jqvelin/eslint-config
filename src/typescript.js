@@ -113,6 +113,7 @@ export default defineConfig([
         beforeColon: false,
         afterColon: true
       }],
+      '@typescript-eslint/consistent-type-definitions': ['error', 'type'],
       '@typescript-eslint/consistent-type-imports': 'error',
       '@typescript-eslint/no-explicit-any': ['error', {
         fixToUnknown: true
